@@ -1,38 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+
 .App {
   text-align: center;
+  /* background-color: #061118; */
+}
+body{
+  background-color: #081620;
+  width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* header */
+.Header{
+  height: 8vh;
+  background-color: #061118;
+  /* border: 1px solid white; */
+}
+.logo{
+  width: 50px;
+  padding-left: 10px;
+  padding-top: 8px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+/* everything underneath the header */
+.MainContainer{
+  margin: 0;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
+@media only screen and (min-width: 800px) {
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  /* visible blue rectangle */
+  .Schedule-Box{
+    /* display: inline-block; */
+    width: 50vw;
+    height: fit-content;
+    border-radius: 40px;
+    padding-bottom: 5vh;
+    /* background-color: red; */
+    border: 3px solid #7EE8FA;
+    box-shadow: 0px 0px 6px #7EE8FA;
+    /* box-shadow: inset 0px 4px 16px #7EE8FA; */
   }
-  to {
-    transform: rotate(360deg);
+
+  /* buttons, box, */
+  .Schedule-Title{
+    color: #E8F0FF;
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 1vh;
+  }
+  .Schedule-Box-Row{
+    display: flex;
+    gap: 0.5vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+  }
+
+  .arrows{
+    height: 60px;
+    margin-top: 10vh;
+  }
+
+
+  /* the schedule table itself */
+
+  table{
+    border-collapse: collapse;
+  }
+  /* th, td{
+    /* border-top: 1px solid white; */
+    /* border-left: 1px solid white; */
+  .Schedule-Box-Contents{
+    margin: auto;
+    margin-top: 1vh;
+    position: relative;
+    /* width: 700px; */
+
+    width: 50vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5vh;
+    /* background-color: red; */
+  }
+
+  .table-wrapper{
+    border-top: 1px solid  #7EE8FA;
+    border-bottom: 1px solid  #7EE8FA;
+  }
+  .Schd-date{
+    color: #E8F0FF;
+    font-size: 28px;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 0px 4px 8px rgba(232, 240, 255, 0.25);
+
+    padding: 10px;
+    align-self: center;
+  }
+
+  .Schedule-Item-Time{
+    color: #E8F0FF;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 0px 4px 8px rgba(232, 240, 255, 0.25);
+    
+    padding-right: 1vw;
+    padding-left: 20px;
+    padding-top: 19px;
+    padding-bottom: 19px;
+
+    border-top: 1px solid #7EE8FA;
+    border-right: 2px solid #7EE8FA;
+    border-bottom: 1px solid #7EE8FA;
+    min-height: 400px;
+    min-width: 80px;
+    width: 8vw;
+  }
+  .Schedule-Item-Event{
+    color: #E8F0FF;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 0px 4px 8px rgba(232, 240, 255, 0.25);
+    filter: none;
+    padding-left: 20px;
+    border-top: 1px solid #7EE8FA;
+    border-left: 2px solid #7EE8FA;
+    border-bottom: 1px solid #7EE8FA;
+    min-height: 400px;
+    height: 60px;
+    width: 32vw;
+  }
+
+  /*Styling for Event Registeration  ===============  */
+  .tooltip-main{
+    background-color: #17384F;
+    width: 20vw;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    border: 1px solid  #7EE8FA;
+    border-radius: 6px;
+    max-height: 300px;
+  }
+
+  .first-name-field, .last-name-field, .email-field, .reminder-field{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 30px;
+  }
+
+  .first-name-title, .last-name-title, .email-title, .event-title, .reminder-title{
+    font-family: 'Roboto', sans-serif;
+    color: #E8F0FF;
+    text-shadow: 0px 4px 8px rgba(232, 240, 255, 0.25);
+  }
+
+  .input{
+    border: 1px solid  #7EE8FA;
+    border-radius: 10px;
+    height: 14px;
+    width: 10vw;
+    margin-right: 0;
+  }
+  .input:focus{
+    border: 3px solid  #7EE8FA;
+    border-radius: 10px;
+  }
+  .register{
+    align-self: center;
+    background-color: #17384F;
+    padding: 4px;
+  }
+
+  .register-button{
+    background-color: #17384F;
+    border: 1px solid  #7EE8FA;
+    border-radius: 12px;
+    padding: 6px;
+
+    font-family: 'Roboto', sans-serif;
+    color: #E8F0FF;
+    text-shadow: 0px 4px 8px rgba(232, 240, 255, 0.25);
+  }
+  .register-button:active {
+    background-color: #142f43;
+    box-shadow: 0 2px #142f43;
+    transform: translateY(1px);
+  }
+
+}
+
+@media only screen and (max-width: 800px) {
+
+  /* visible blue rectangle */
+  .Schedule-Box{
+    /* display: inline-block; */
+    width: 60vw;
+    height: fit-content;
+    border-radius: 40px;
+    padding-bottom: 5vh;
+    /* background-color: red; */
+    border: 3px solid #7EE8FA;
+    box-shadow: 0px 0px 6px #7EE8FA;
+    /* box-shadow: inset 0px 4px 16px #7EE8FA; */
+  }
+
+  /* buttons, box, */
+  .Schedule-Title{
+    color: #E8F0FF;
+    font-size: 22px;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 1vh;
+  }
+
+  .Schedule-Box-Row{
+    display: flex;
+    gap: 0.5vw;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+  }
+
+  .arrows{
+    height: 40px;
+    margin-top: 5vh;
+  }
+
+
+  /* the schedule table itself */
+
+  table{
+    border-collapse: collapse;
+  }
+  /* th, td{
+    /* border-top: 1px solid white; */
+    /* border-left: 1px solid white; */
+  .Schedule-Box-Contents{
+    margin: auto;
+    margin-top: 1vh;
+    position: relative;
+    /* width: 700px; */
+
+    width: 60vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5vh;
+    /* background-color: red; */
+  }
+
+  .table-wrapper{
+    border-top: 1px solid  #7EE8FA;
+    border-bottom: 1px solid  #7EE8FA;
+  }
+  .Schd-date{
+    color: #E8F0FF;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 0px 4px 8px rgba(232, 240, 255, 0.25);
+
+    padding: 10px;
+    align-self: center;
+  }
+
+  .Schedule-Item-Time{
+    color: #E8F0FF;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 0px 4px 8px rgba(232, 240, 255, 0.25);
+    
+    padding-right: 1vw;
+    padding-left: 3.5vw;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    border-top: 1px solid #7EE8FA;
+    border-right: 2px solid #7EE8FA;
+    border-bottom: 1px solid #7EE8FA;
+    min-width: 50px;
+    /* background-color: blue; */
+
+    width: 10vw;
+    /* background-color: red; */
+    /* border: 2px solid white; */
+  }
+  .Schedule-Item-Event{
+    color: #E8F0FF;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 0px 4px 8px rgba(232, 240, 255, 0.25);
+    filter: none;
+    padding-left: 20px;
+    border-top: 1px solid #7EE8FA;
+    border-left: 2px solid #7EE8FA;
+    border-bottom: 1px solid #7EE8FA;
+    min-height: 400px;
+    height: 60px;
+    /* background-color: pink; */
+
+    width: 30vw;
+    /* border: 2px solid white; */
+  }
+
+/*Styling for Event Registeration  ===============  */
+
+  .tooltip-main{
+    background-color: #17384F;
+    width: 52vw;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    border: 1px solid  #7EE8FA;
+    border-radius: 6px;
+    max-width: 310px;
+    /* max-height: 350px; */
+  }
+
+  .first-name-field, .last-name-field, .reminder-field,.email-field{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .first-name-title, .last-name-title, .email-title, .event-title, .reminder-title{
+    font-family: 'Roboto', sans-serif;
+    color: #E8F0FF;
+    text-shadow: 0px 4px 8px rgba(232, 240, 255, 0.25);
+    text-align: center;
+  }
+  .email-title{
+    padding-right: 35px;
+  }
+  .input{
+    border: 1px solid  #7EE8FA;
+    border-radius: 10px;
+    height: 14px;
+    width: 25vw;
+  }
+  .input:focus{
+    border: 3px solid  #7EE8FA;
+    border-radius: 10px;
+    height: 14px;
+    width: 25vw;
+  }
+  .register{
+    align-self: center;
+    background-color: #17384F;
+    padding: 4px;
+  }
+
+  .register-button{
+    background-color: #17384F;
+    border: 1px solid  #7EE8FA;
+    border-radius: 12px;
+    padding: 6px;
+
+    font-family: 'Roboto', sans-serif;
+    color: #E8F0FF;
+    text-shadow: 0px 4px 8px rgba(232, 240, 255, 0.25);
+  }
+  .register-button:active {
+    background-color: #142f43;
+    box-shadow: 0 2px #142f43;
+    transform: translateY(1px);
   }
 }
