@@ -20,7 +20,8 @@ The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
 ---
-#Design
+# Design
 
 The visual design for this component was referenced from [here](https://www.figma.com/file/CJf6HOwmk8kFCPr0pUanyf/CruzHacks-Frontend-Challenge-2023?type=design&node-id=0-1&t=0Y7LpcFky8qzwTKS-0), and the component was made with ReactJS, with JSX, and CSS.
+I approached this project by breaking up the design into groups, and seeing what components were encapsulated in a bigger element. For example, the main container containing the schedule was wrapped by another div that handled the placement of the 'Schedule' title, and the buttons on the side.
 
