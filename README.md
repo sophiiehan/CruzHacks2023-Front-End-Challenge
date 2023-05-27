@@ -20,5 +20,7 @@ The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
 ---
+#Design
 
+The visual design for this component was referenced from [here](https://www.figma.com/file/CJf6HOwmk8kFCPr0pUanyf/CruzHacks-Frontend-Challenge-2023?type=design&node-id=0-1&t=0Y7LpcFky8qzwTKS-0), and the component was made with ReactJS, with JSX, and CSS.
 
