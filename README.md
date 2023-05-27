@@ -1,10 +1,14 @@
-# Getting Started with Create React App
+# Submission for CruzHacks2023 Organizer Front End Challenge
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was made with ReactJS, bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+Make sure you have NodeJS installed, and run the command
 
-In the project directory, you can run:
+### `npm install`
+
+to install all of the dependencies this project uses
+
+In the project directory, run:
 
 ### `npm start`
 
