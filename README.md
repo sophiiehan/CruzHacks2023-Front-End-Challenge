@@ -29,6 +29,8 @@ I approached this project by breaking up the design into groups, and seeing what
 ## Program Design
 I separated each component into functions. For complex components like ScheduleBox and ScheduleContents, they called on other functions that refer to the component's children.
 
-### Challenges
+---
+
+## Challenges
 The most challenging portion of the project for me was getting the schedule as data, and passing it into the components., as I had little experience getting data from an exteral http link. I was met with a No-CORS Policy error when using HTTP GET, and am unaware of how to fix the issue without modifying something on the server end. As a solution, I copied the data from the website into a local data.JSON file, and allowed my program to parse it from there.
 
