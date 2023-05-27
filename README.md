@@ -38,4 +38,6 @@ The most challenging portion of the project for me was getting the schedule as d
 ## What Went Well
 Overall, the coding process was pretty smooth. This was one of my first projects developed using ReactJS, and I definetely learned a lot, everything from component-based architecture to connecting my front-end with a database. Given my background in HTML and CSS, I did not have much issues with responsiveness or rendering.
 
+## Future Improvements
+I definetely could have improved on the data retreival portion of this project, as well as the table display and overall code legibility. As of now, my knowledge of React is slightly limited, so I am not aware of how to structure my code efficiently or take full advantage of the component structure. However, I am definetely willing to learn and develop an even stronger foundation on ReactJS, and improve on my program design as a whole.
 
