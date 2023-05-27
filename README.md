@@ -7,7 +7,7 @@ Make sure you have NodeJS installed, and run the command
 ### `npm install`
 
 to install all of the dependencies this project uses.
-NOTE: if npm install is throwing errors about not being able to resolve conflicts or dependencies, try setting legacy-peer-deps to true in npm config, and then run 'npm install'.
+NOTE: if npm install is throwing errors about not being able to resolve conflicts or dependencies, try setting ```legacy-peer-deps``` to ```true``` in npm config, and then run ```npm install```.
 
 In the project directory, run:
 
