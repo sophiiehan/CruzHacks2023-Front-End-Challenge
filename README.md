@@ -22,6 +22,13 @@ You may also see any lint errors in the console.
 ---
 # Design
 
+## Visual Design
 The visual design for this component was referenced from [here](https://www.figma.com/file/CJf6HOwmk8kFCPr0pUanyf/CruzHacks-Frontend-Challenge-2023?type=design&node-id=0-1&t=0Y7LpcFky8qzwTKS-0), and the component was made with ReactJS, with JSX, and CSS.
 I approached this project by breaking up the design into groups, and seeing what components were encapsulated in a bigger element. For example, the main container containing the schedule was wrapped by another div that handled the placement of the 'Schedule' title, and the buttons on the side.
+
+## Program Design
+I separated each component into functions. For complex components like ScheduleBox and ScheduleContents, they called on other functions that refer to the component's children.
+
+### Challenges
+The most challenging portion of the project for me was getting the schedule as data, and passing it into the components., as I had little experience getting data from an exteral http link. I was met with a No-CORS Policy error when using HTTP GET, and am unaware of how to fix the issue without modifying something on the server end. As a solution, I copied the data from the website into a local data.JSON file, and allowed my program to parse it from there.
 
