@@ -28,11 +28,14 @@ I approached this project by breaking up the design into groups, and seeing what
 
 ## Program Design
 I separated each component into functions. For complex components like ScheduleBox and ScheduleContents, they called on other functions that refer to the component's children.
-The Schedule component took in data from a local JSON file, which contains the date and the events (with properties like name, time, and clickable) and displayed it in a table. I created a map that mapped every individual event to a row in the table, and displayed it accordingly. Events that have the ```clickable``` property to ```true``` display a popup menu that allows the user to register for the event. This was acheived with packages [ReactToolTip](https://www.npmjs.com/package/react-tooltip) and [ReactTooltipController](https://www.npmjs.com/package/react-tooltip-controller)
+The Schedule component took in data from a local JSON file, which contains the date and the events (with properties like ```name```,``` time```, and ```clickable```) and displayed it in a table. I created a map that mapped every individual event to a row in the table, and displayed it accordingly. Events that have the ```clickable``` property to ```true``` display a popup menu that allows the user to register for the event. This was acheived with packages [ReactToolTip](https://www.npmjs.com/package/react-tooltip) and [ReactTooltipController](https://www.npmjs.com/package/react-tooltip-controller).
 
 ---
 
 ## Challenges
-The most challenging portion of the project for me was getting the schedule as data, and passing it into the components, as I had little experience getting data from an exteral http link. I was met with a No-CORS Policy error when using HTTP GET from FetchAPI, and am unaware of how to fix the issue without modifying something on the server end. As a solution, I copied the data from the website into a local data.JSON file, and allowed my program to parse it from there.
+The most challenging portion of the project for me was getting the schedule as data, and passing it into the components, as I had little experience getting data from an exteral http link. I was met with a No-CORS Policy error when using HTTP GET from FetchAPI, and am unaware of how to fix the issue without modifying something on the server end. As a solution, I copied the data from the website into a local ```data.JSON``` file, and allowed my program to parse it from there.
+
+## What Went Well
+Overall, the coding process was pretty smooth. This was one of my first projects developed using ReactJS, and I definetely learned a lot, everything from component-based architecture to connecting my front-end with a database. Given my background in HTML and CSS, I did not have much issues with responsiveness or rendering.
 
 
